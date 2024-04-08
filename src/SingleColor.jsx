@@ -2,6 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 const SingleColor = ({ color, index }) => {
+  const { hex, weight } = color;
   const saveToClipboard = async () => {
     if (navigator.clipboard) {
       try {
